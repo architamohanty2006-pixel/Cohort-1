@@ -1,0 +1,17 @@
+/*.box{
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
+}
+*/
+div{
+  border: 5px;
+  margin-top: 10px;
+  background-color: rgb(27, 202, 143);
+  height: 100px;
+  width: 100px;
+  color:aliceblue;
+  font-size: x-large;
+  padding: 30px;
+  margin-top: 10px;
+}
