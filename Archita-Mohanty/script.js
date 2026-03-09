@@ -146,11 +146,30 @@
 // }
 
 
-const element=document.getElementsByClassName('num')
-console.log(element)
-let colors=['green','blue','yellow','red'];
-let i=0;
-for(e of element){
-    e.style.color=colors[i];
-    i++;
+// const element=document.getElementsByClassName('num')
+// console.log(element)
+// let colors=['red','orange','green','blue'];
+// let i=0;
+// for(e of element){
+//     e.style.color=colors[i];
+//     i++;
+// }
+function colorise(){
+    const element=document.getElementsByClassName('num');
+    colors.reverse()
+    console.log(colors)
+    for(let i=0;i<element.length;i++){
+        element[i].id=colors[i];
+
+
+    }
 }
+const but=document.querySelector('#but');
+let colors=['red','orange','green','blue'];
+// const but=document.querySelector('#red');
+function redcolor(){
+    const element=document.querySelector('#three')
+    element.className='red';
+}
+// but.onclick=redcolor
+but.addEventListener('click',colorise)
