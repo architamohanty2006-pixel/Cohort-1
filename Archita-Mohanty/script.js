@@ -198,29 +198,36 @@
 // })
 
 //FORM MANIPULATION/VALIDATION
-const form=document.getElementById("registrationForm")
-form.addEventListener("submit",function(ele){
-    ele.preventDefault()
-})
+// const form=document.getElementById("registrationForm")
+// form.addEventListener("submit",function(ele){
+//     ele.preventDefault() //preventDefault()stops the browser from refresing the page
+// })
 
 //Values reading
-const username=document.getElementById("Username").value.trim() 
-const email=document.getElementById("email").value.trim()
-console.log("Username",username)
-console.log("Email:",email)
-//Form validation:checking the values of username 
-// and email(any other fields)to validate in the form
-if(username === ""|| email=== ""){
-    alert("please fill in all fields")
-}
-//"this" refers to the current present element-might be a
-//  div or an input field or any form element
-if(username.length<3){
-    alert("username must be atleast 3 characters")
-    this.StylePropertyMap.border="2px solid red"
-}
+// const username=document.getElementById("Username").value.trim() 
+// const email=document.getElementById("email").value.trim()
+// console.log("Username",username)
+// console.log("Email:",email)
+// //Form validation:checking the values of username 
+// // and email(any other fields)to validate in the form
+// if(username === ""|| email=== ""){
+//     alert("please fill in all fields")
+// }
+// //"this" refers to the current present element-might be a
+// //  div or an input field or any form element
+// if(username.length<3){
+//     alert("username must be atleast 3 characters")
+//     this.StylePropertyMap.border="2px solid red"
+// }
 
+const para=document.getElementById("para")
 
+//Adds a class name to that element
+para.classList.add("para class")
+
+//$ sign meaning
+let docs='guyss'
+console.log("hii",$(docs))
 
 
 
